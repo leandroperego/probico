@@ -1,0 +1,33 @@
+const btnMenuBar = document.querySelector("#menu-bar");
+const closeMenuBar = document.querySelector("#close-menu");
+const menu = document.querySelector("#container-menu-bar");
+
+btnMenuBar.addEventListener("click", exibirMenu);
+closeMenuBar.addEventListener("click", fecharMenu);
+
+function exibirMenu(){
+    menu.style.display = "flex";
+    document.body.style.overflow = "hidden";
+    menu.style.animation = "exibirMenu 1000ms";
+}
+
+function fecharMenu(){
+    menu.style.display = "none";
+    document.body.style.overflow = "scroll";
+}
+
+// --------------------abrir lacuna associados
+const liAssociados = document.querySelector("#associados");
+const divSubMenu = document.querySelector("#associados-subMenu");
+
+liAssociados.addEventListener("click", exibirSubMenu);
+
+function exibirSubMenu(){
+    let displayDiv = divSubMenu.style.display;
+
+    if(displayDiv == "none"){
+        divSubMenu.style.display = "block";
+    } else{
+        divSubMenu.style.display = "none";
+    }
+}

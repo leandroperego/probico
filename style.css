@@ -413,3 +413,69 @@ h3{
 #box1{
     background-color: var(--color30);
 }
+
+/* ----------------------- menu----------------- */
+#container-menu-bar{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgba(0, 50, 82, 0.5);
+}
+
+#box-menu{
+    width: 70%;
+    height: 100%;
+    background-color: var(--color30);
+    color: var(--color60);
+}
+
+#box-menu header{
+    height: 10rem;
+    border-bottom: 3px solid var(--color60);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3rem;
+    font-size: 2rem;
+}
+
+#box-menu header i{
+    font-size: 3rem;
+}
+
+
+#box-menu main ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+#box-menu a{
+    color: var(--color60);
+}
+
+#box-menu main ul li{
+    width: 70%;
+    border-bottom: 1px solid;
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.ul-subMenu li a{
+    font-size: 1.3rem;
+}
+
+@keyframes exibirMenu{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
