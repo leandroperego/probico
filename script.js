@@ -8,7 +8,7 @@ closeMenuBar.addEventListener("click", fecharMenu);
 function exibirMenu(){
     menu.style.display = "flex";
     document.body.style.overflow = "hidden";
-    menu.style.animation = "exibirMenu 1000ms";
+    menu.style.animation = "exibirMenu 1000ms forwards";
 }
 
 function fecharMenu(){

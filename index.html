@@ -96,9 +96,11 @@
                     <div class="box-img-noticias">
                         <img id="img-noticias" src="imagens/hero.png" alt="Imagem noticia">
                     </div>
-                    <span class="data-noticia">08 DE FEVEREIRO, 2023</span>
-                    <h4 class="titulo-noticia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sunt pariatur magnam alias aperiam rerum dolore.</h4>
-                    <button class="bt-padrao">LEIA MAIS</button>
+                    <div class="box-conteudo-noticias">
+                        <span class="data-noticia">08 DE FEVEREIRO, 2023</span>
+                        <h4 class="titulo-noticia">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sunt pariatur magnam alias aperiam rerum dolore.</h4>
+                        <button class="bt-padrao">LEIA MAIS</button>
+                    </div>
                 </a>
             </section>
             <section class="circulos-carrossel">
@@ -115,35 +117,66 @@
                 <h3>PRÓXIMOS EVENTOS</h3>
                 <a id="mais-noticias" href="">TODOS EVENTOS</a>
             </div>
-            <section class="container-evento">
-                <a class="box-evento" href="">
-                        <section class="evento-esquerdo">
-                            <ul>
-                                <div>
-                                    <li>
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                        <span>08/02/2023</span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                        <span>10:00</span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                        <span>Salão da praça</span>
-                                    </li>
-                                </div>
-                            </ul>
-                        </section>
-                        <section class="evento-direito">
-                            <h4>REUNIÃO PROBICO</h4>
-                            <p class="descricao-reuniao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis tempora voluptas impedit, omnis nemo voluptatem doloribus sapiente suscipit, optio et, minus nihil fugit soluta eaque. Illo, tempore? Labore, nemo.</p>
-                        </section>
-                    </a>
-                    <div class="area-button">
-                        <button class="bt-padrao">Ver detalhes</button>
-                    </div>
-            </section>
+            <div id="box-containers">
+                <section class="container-evento">
+                    <a class="box-evento" href="">
+                            <section class="evento-esquerdo">
+                                <ul>
+                                    <div>
+                                        <li>
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>08/02/2023</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>10:00</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            <span>Salão da praça</span>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </section>
+                            <section class="evento-direito">
+                                <h4>REUNIÃO PROBICO</h4>
+                                <p class="descricao-reuniao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis tempora voluptas impedit, omnis nemo voluptatem doloribus sapiente suscipit, optio et, minus nihil fugit soluta eaque. Illo, tempore? Labore, nemo.</p>
+                            </section>
+                        </a>
+                        <div class="area-button">
+                            <button class="bt-padrao">Ver detalhes</button>
+                        </div>
+                </section>
+                <section id="container-evento2" class="container-evento">
+                    <a class="box-evento" href="">
+                            <section class="evento-esquerdo">
+                                <ul>
+                                    <div>
+                                        <li>
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <span>15/03/2023</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                            <span>18:00</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            <span>Salão da praça</span>
+                                        </li>
+                                    </div>
+                                </ul>
+                            </section>
+                            <section class="evento-direito">
+                                <h4>ASSEMBLÉIA GERAL</h4>
+                                <p class="descricao-reuniao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero blanditiis tempora voluptas impedit.</p>
+                            </section>
+                        </a>
+                        <div class="area-button">
+                            <button class="bt-padrao">Ver detalhes</button>
+                        </div>
+                </section>
+            </div>
             <section class="circulos-carrossel">
                 <i class="fa fa-circle-thin" aria-hidden="true"></i>
                 <i class="fa fa-circle" aria-hidden="true"></i>
@@ -168,97 +201,99 @@
     </main>
 
     <footer>
-        <section id="footer-contato">
-            <ul>
-                <li>
-                    <a href="">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
+        <section id="footer-conteudo">
+            <section id="footer-contato">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
 
-                        <span>
-                           63 3333 3333
-                        </span>
+                            <span>
+                            63 3333 3333
+                            </span>
 
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:contato@probico.com.br">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:contato@probico.com.br">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
 
-                        <span>
-                            contato@probico.com.br
-                        </span>
+                            <span>
+                                contato@probico.com.br
+                            </span>
 
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
 
-                        <span>
-                            Rua Exemplo, 7455 - Centro
-                            <br>
-                            Augustinópolis-TO
+                            <span>
+                                Rua Exemplo, 7455 - Centro
+                                <br>
+                                Augustinópolis-TO
 
-                        </span>
+                            </span>
 
-                    </a>
-                </li>          
-            </ul>
-        </section>
+                        </a>
+                    </li>          
+                </ul>
+            </section>
 
-        <section id="footer-menu">
-            <ul>
-                <li>
-                    <a href="">
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
+            <section id="footer-menu">
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
 
-                        <span>
-                           Eventos
-                        </span>
+                            <span>
+                            Eventos
+                            </span>
 
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
 
-                        <span>
-                            Notícias
-                        </span>
+                            <span>
+                                Notícias
+                            </span>
 
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fa fa-users" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-users" aria-hidden="true"></i>
 
-                        <span>
-                            Associados
-                        </span>
+                            <span>
+                                Associados
+                            </span>
 
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-handshake-o" aria-hidden="true"></i>
 
-                        <span>
-                            Parcerias
-                        </span>
+                            <span>
+                                Parcerias
+                            </span>
 
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <i class="fa fa-address-book" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-address-book" aria-hidden="true"></i>
 
-                        <span>
-                            Fale Conosco
-                        </span>
+                            <span>
+                                Fale Conosco
+                            </span>
 
-                    </a>
-                </li>            
-            </ul>
+                        </a>
+                    </li>            
+                </ul>
+            </section>
         </section>
 
         <section id="footer-redes">
@@ -293,26 +328,47 @@
             </header>
             <main>
                 <ul>
-                    <a href=""><li>HOME</li></a>
-                    <a href=""><li>INSTITUCIONAL</li></a>
-                    <a href=""><li>EVENTOS</li></a>
-                    <a href=""><li>NOTICIAS</li></a>
+                    <a href=""><li>
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span>HOME</span>
+                    </li></a>
+                    <a href=""><li>
+                        <i class="fa fa-building" aria-hidden="true"></i>
+                        <span>INSTITUCIONAL</span>
+                    </li></a>
+                    <a href=""><li>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                        <span>EVENTOS</span>
+                        
+                    </li></a>
+                    <a href=""><li>
+                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                        <span>NOTICIAS</span>
+                        
+                    </li></a>
                     <li id="associados" class="submenu">
                         <div>
-                            <span>ASSOCIADOS</span>
-                            <span id="icon-place">
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            </span>
+                            <div>
+                                <i class="fa fa-id-card-o" aria-hidden="true"></i>
+                                <span>ASSOCIADOS</span>
+                                <span id="icon-place">
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </div>
                         </div>
                         <div id="associados-subMenu" style="display: none;">
                             <ul class="ul-subMenu">
-                                <a href=""><li>PRESIDENTE</li></a>
-                                <a href=""><li>DIRETORIA</li></a>
-                                <a href=""><li>ASSOCIADOS</li></a>
+                                <a href=""><li>Presidente</li></a>
+                                <a href=""><li>Diretoria</li></a>
+                                <a href=""><li>Associados</li></a>
                             </ul>
                         </div>
                     </li>
-                    <a href=""><li>CONTATO</li></a>
+                    <a href=""><li>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>CONTATO</span>
+                        
+                    </li></a>
                 </ul>
             </main>
             <footer>
