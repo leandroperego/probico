@@ -19,16 +19,16 @@
         <header>
             <img id="logo" src="imagens/logo.png" alt="Logo PROBICO">
             <i id="menu-bar" class="fa fa-bars" aria-hidden="true"></i>
-            <!-- <nav>
+            <nav id="menu-desktop">
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">INSTITUCIONAL</a></li>
-                    <li><a href="">EVENTOS</a></li>
-                    <li><a href="">NOTÍCIAS</a></li>
-                    <li><a href="">ASSOCIADOS</a></li>
-                    <li><a href="">CONTATO</a></li>
+                    <a href=""><li>HOME</li></a>
+                    <a href=""><li>INSTITUCIONAL</li></a>
+                    <a href=""><li>EVENTOS</li></a>
+                    <a href=""><li>NOTÍCIAS</li></a>
+                    <a href=""><li>ASSOCIADOS</li></a>
+                    <a href=""><li>CONTATO</li></a>
                 </ul>
-            </nav> -->
+            </nav>
         </header>
         <section id="hero-titulo">
             <h1>ASSOCIAÇÃO DOS PRODUTORES DO BICO DO PAPAGAIO</h1>
@@ -38,6 +38,7 @@
             </div>
         </section>
     </section>
+
     <main>
         <article id="nossa-historia">
             <h3>NOSSA HISTÓRIA</h3>
@@ -47,37 +48,40 @@
 
         <article id="probico-em-numeros">
             <h3>REGIÃO DO BICO EM NÚMEROS</h3>
-            <section class="container-probico-em-numeros">
+
+            <div id="container-box-numeros">
+                <section class="container-probico-em-numeros">
+                        <div class="display-flex">
+                            <span class="dado-numero">262</span>
+                            <i class="fa fa-plus icon-add" aria-hidden="true"></i>
+                        </div>
+                        <span class="dado-texto">Milhões de Cabeças de gado</span>
+                </section>
+
+                <section class="container-probico-em-numeros">
                     <div class="display-flex">
-                        <span class="dado-numero">262</span>
+                        <span class="dado-numero">2.620</span>
                         <i class="fa fa-plus icon-add" aria-hidden="true"></i>
                     </div>
-                    <span class="dado-texto">Milhões de Cabeças de gado</span>
-            </section>
+                    <span class="dado-texto">Milhões de Hectares</span>
+                </section>
 
-            <section class="container-probico-em-numeros">
-                <div class="display-flex">
-                    <span class="dado-numero">2.620</span>
-                    <i class="fa fa-plus icon-add" aria-hidden="true"></i>
-                </div>
-                <span class="dado-texto">Milhões de Hectares</span>
-            </section>
+                <section class="container-probico-em-numeros">
+                    <div class="display-flex">
+                        <span class="dado-numero">26.000</span>
+                        <i class="fa fa-plus icon-add" aria-hidden="true"></i>
+                    </div>
+                    <span class="dado-texto">Mil Produtores Rurais</span>
+                </section>
 
-            <section class="container-probico-em-numeros">
-                <div class="display-flex">
-                    <span class="dado-numero">26.000</span>
-                    <i class="fa fa-plus icon-add" aria-hidden="true"></i>
-                </div>
-                <span class="dado-texto">Mil Produtores Rurais</span>
-            </section>
-
-            <section class="container-probico-em-numeros">
-                <div class="display-flex">
-                    <span class="dado-numero">260</span>
-                    <i class="fa fa-plus icon-add" aria-hidden="true"></i>
-                </div>
-                <span class="dado-texto">Mil Kilometros de Rios</span>
-            </section>
+                <section class="container-probico-em-numeros">
+                    <div class="display-flex">
+                        <span class="dado-numero">260</span>
+                        <i class="fa fa-plus icon-add" aria-hidden="true"></i>
+                    </div>
+                    <span class="dado-texto">Mil Kilometros de Rios</span>
+                </section>
+            </div>
            
         </article>
         
@@ -160,6 +164,7 @@
             </div>
         </article>
     </main>
+
     <footer>
         <section id="footer-contato">
             <ul>
@@ -195,8 +200,7 @@
                         </span>
 
                     </a>
-                </li>
-                
+                </li>          
             </ul>
         </section>
 
@@ -251,8 +255,7 @@
                         </span>
 
                     </a>
-                </li>
-                
+                </li>            
             </ul>
         </section>
 
@@ -288,10 +291,10 @@
             </header>
             <main>
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">INSTITUCIONAL</a></li>
-                    <li><a href="">EVENTOS</a></li>
-                    <li><a href="">NOTICIAS</a></li>
+                    <a href=""><li>HOME</li></a>
+                    <a href=""><li>INSTITUCIONAL</li></a>
+                    <a href=""><li>EVENTOS</li></a>
+                    <a href=""><li>NOTICIAS</li></a>
                     <li id="associados" class="submenu">
                         <div>
                             <span>ASSOCIADOS</span>
@@ -301,13 +304,13 @@
                         </div>
                         <div id="associados-subMenu" style="display: none;">
                             <ul class="ul-subMenu">
-                                <li><a href="">PRESIDENTE</a></li>
-                                <li><a href="">DIRETORIA</a></li>
-                                <li><a href="">ASSOCIADOS</a></li>
+                                <a href=""><li>PRESIDENTE</li></a>
+                                <a href=""><li>DIRETORIA</li></a>
+                                <a href=""><li>ASSOCIADOS</li></a>
                             </ul>
                         </div>
                     </li>
-                    <li><a href="">CONTATO</a></li>
+                    <a href=""><li>CONTATO</li></a>
                 </ul>
             </main>
             <footer>

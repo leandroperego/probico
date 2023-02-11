@@ -28,6 +28,9 @@ a{
     --font60: 'Roboto', sans-serif;
     --font30: 'Roboto Condensed', sans-serif;
     --font10: 'Anton', sans-serif;
+
+    --header-vh: 10rem;
+    --hero-vh: 60vh;
 }
 
 body{
@@ -41,9 +44,28 @@ html{
     scroll-behavior: smooth;
 }
 
+#menu-desktop{
+    display: none;
+    width: 60%;
+}
+
+#menu-desktop ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu-desktop ul a{
+    color: var(--color60);
+}
+
+#menu-desktop ul a:hover{
+    font-weight: bolder;
+}
+
 #hero{
     width: 100vw;
-    height: calc(60vh);
+    height: var(--hero-vh);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagens/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -53,7 +75,7 @@ html{
 
 header{
     width: 100%;
-    height: 10rem;
+    height: var(--header-vh);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,7 +91,7 @@ i#menu-bar{
 }
 
 section#hero-titulo{
-    height: calc(60vh - 10rem);
+    height: calc(var(--hero-vh) - var(--header-vh));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,9 +141,15 @@ article#nossa-historia p{
     margin-bottom: 1rem;
 }
 
+#container-box-numeros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 .container-probico-em-numeros{
     width: 100%;
-    padding: 3rem 0;
+    padding: 3rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,7 +346,8 @@ article#eventos ul{
 }
 
 footer{
-    height: 100vh;
+    /* height: 100vh; */
+    max-height: 1000px;
     background-color: var(--color30);
     padding: 5rem;
     color: var(--color60);
@@ -467,23 +496,60 @@ h3{
     color: var(--color60);
 }
 
-#box-menu main ul li{
+#box-menu main ul a,
+#associados{
     width: 70%;
     border-bottom: 1px solid;
     font-size: 1.7rem;
     padding-bottom: 1rem;
 }
 
-.ul-subMenu li a{
+#associados{
+    cursor: pointer;
+}
+
+.ul-subMenu li{
     font-size: 1.3rem;
 }
 
 @keyframes exibirMenu{
     0%{
-        opacity: 0;
+        transform: translateX(1000px);
+        -webkit-transform: translateX(1000px);
+        -moz-transform: translateX(1000px);
+    }
+}
+
+@media (min-width:769px){
+    :root{
+        --hero-vh: 80vh;
     }
 
-    100%{
-        opacity: 1;
+    .container-probico-em-numeros{
+        width: calc(100%/2)
     }
+}
+
+@media (min-width: 1025px){
+    /* versao desktop ja */
+
+    :root{
+        --hero-vh: 100vh;
+    }
+
+    #menu-bar{
+        display: none;
+    }
+
+    #menu-desktop{
+        display: block;
+    }
+
+    .container-probico-em-numeros{
+        width: calc(100%/4)
+    }
+}
+
+@media (min-width: 1201px){
+
 }
