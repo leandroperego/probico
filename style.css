@@ -186,6 +186,7 @@ div.display-flex .icon-add{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .cabecalho-articles{
@@ -200,6 +201,7 @@ div.display-flex .icon-add{
 }
 
 .container-noticias{
+    margin-top: 3rem;
     padding: 15px;
     box-shadow: -1px 16px 20px -4px rgba(0,0,0,0.5);
 -webkit-box-shadow: -1px 16px 20px -4px rgba(0,0,0,0.5);
@@ -537,6 +539,29 @@ h3{
         --hero-vh: 100vh;
     }
 
+    section#hero-titulo h1{
+        font-size:3rem;
+        font-weight: bolder;
+    }
+
+    section#hero-titulo h2{
+        font-size: 2rem;
+    }
+
+    section#hero-titulo{
+        gap: 2rem;
+    }
+
+    h3,
+    article#eventos .cabecalho-articles h3{
+        font-size: 3rem;
+    }
+
+    article#nossa-historia{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
     #menu-bar{
         display: none;
     }
@@ -545,8 +570,38 @@ h3{
         display: block;
     }
 
+    main article{
+        width: 80vw;
+        margin: 4rem auto;
+        padding: 1rem 4rem;
+    }
+
     .container-probico-em-numeros{
-        width: calc(100%/4)
+        width: calc(100%/4);
+        gap: 3.5rem;
+    }
+
+    .container-probico-em-numeros .dado-texto{
+        font-size: 2.5rem;
+    }
+
+    .container-noticias a{
+        
+    }
+   
+
+    article#eventos{
+        width: 100%;
+    }
+
+    #container-conteudo-evento{
+        width: 80vw;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    footer{
+        padding: 5rem 10%;
     }
 }
 
