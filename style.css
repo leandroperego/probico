@@ -502,7 +502,8 @@ h3{
 }
 
 
-#box-menu main ul{
+#box-menu main ul,
+.teste{
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -534,6 +535,15 @@ h3{
 
 .ul-subMenu li{
     font-size: 1.3rem;
+}
+
+#submenu-desktop{
+    width: 200px;
+    height: 200px;
+    background-color: #f5f5f5;
+    position: absolute;
+    display: inline;
+    color: #003250;
 }
 
 @keyframes exibirMenu{
@@ -570,7 +580,9 @@ h3{
     }
 
     section#hero-titulo h1{
-        font-size:3rem;
+        width: 50rem;
+        line-height: 5rem;
+        font-size:3.5rem;
         font-weight: bolder;
     }
 
@@ -580,6 +592,12 @@ h3{
 
     section#hero-titulo{
         gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#hero button{
+        width: 20rem;
     }
 
     h3,
