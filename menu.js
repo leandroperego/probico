@@ -10,29 +10,34 @@ export default function Menu(){
     const listaMenu = [home, institucional, eventos, noticias, associados, contato];
 
     let nav = document.querySelector("#menu-desktop");
-    criarMenu();
+    criarMenu(nav);
 
-    function criarMenu(){
+    function criarMenu(locationInsert){
 
-        let ul = document.createElement("ul");
+        let newElement_ul = document.createElement("ul");
 
         listaMenu.forEach((item, indice) => {
-            let tagA = document.createElement("a");
-                let li = document.createElement("li");
+            let newElement_a = document.createElement("a"); //cria elemento a
+            let newElement_li = document.createElement("li"); //cria elemento a
     
-                if (typeof item == "object"){
+                if (typeof item == "object"){ //verificação se é object para incluir submenus
+
                     // li.innerText = item.nome.toUpperCase();
-                    li.innerHTML = `${item.nome.toUpperCase()}<span id="icon-place">
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </span>`;
+                    newElement_li.innerHTML = 
+                    `
+                        ${item.nome.toUpperCase()}
+                        <span id="icon-place">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    `;
                 } else{
-                    li.innerText = item.toUpperCase();
+                    newElement_li.innerText = item.toUpperCase(); //elemento li criado insere o conteudo do item do forEach
                 }
-                tagA.appendChild(li);
-                ul.appendChild(tagA);
-        });
+                newElement_a.appendChild(newElement_li); //insere a li dentro da tag a
+                newElement_ul.appendChild(newElement_a); //insere a tag a dentro da ul
+        }); //repete para cada item da lista de menus declarados
         
-        nav.appendChild(ul)
+        locationInsert.appendChild(newElement_ul)
 
     }
 
