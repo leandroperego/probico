@@ -1,6 +1,10 @@
-// import Menu from "./menu.js";
+// import Menu from "/menu.js";
+import Carousel from "/carousel.js";
 
 // Menu();
+Carousel("noticias");
+Carousel("eventos");
+
 
 const btnMenuBar = document.querySelector("#menu-bar");
 const closeMenuBar = document.querySelector("#close-menu");
@@ -42,19 +46,19 @@ function exibirSubMenu(){
     }
 }
 
-// let divSubMenuDesktop = document.querySelector("#submenu-desktop");
-// function exibirSubMenuDesktop(event){
-//     let elementoEvento = event.currentTarget;
+let divSubMenuDesktop = document.querySelector("#submenu-desktop");
+function exibirSubMenuDesktop(event){
+    let elementoEvento = event.currentTarget;
     
-//     let posicaoDoElemento = elementoEvento.getBoundingClientRect();
+    let posicaoDoElemento = elementoEvento.getBoundingClientRect();
 
-//     let posicaoX = posicaoDoElemento.x;
-//     let posicaoY = posicaoDoElemento.y;
-//     let tamanhoElemento = posicaoDoElemento.width;
+    let posicaoX = posicaoDoElemento.x;
+    let posicaoY = posicaoDoElemento.y;
+    let tamanhoElemento = posicaoDoElemento.width;
 
-//     divSubMenuDesktop.style.left = posicaoX - tamanhoElemento/2 + "px";
-//     appendChildSubMenuDesktop(elementoEvento);
-// }
+    divSubMenuDesktop.style.left = posicaoX - tamanhoElemento/2 + "px";
+    appendChildSubMenuDesktop(elementoEvento);
+}
 
 // function appendChildSubMenuDesktop(elemento){
 //     let elementoClicado = elemento.children[0].textContent; //ASSOCIADOS
