@@ -459,8 +459,8 @@ h3{
     display: flex;
     flex-direction: row-reverse;
     background-color: rgba(0, 50, 82, 0.5);
-    animation: exibirMenu 1000ms;
     -webkit-animation: exibirMenu 1000ms;
+    animation: exibirMenu 1000ms;
 }
 
 #box-menu{
@@ -537,6 +537,14 @@ h3{
     border-radius: 20px;
     padding: 4rem;
 } */
+
+@-webkit-keyframes exibirMenu{
+    0%{
+        transform: translateX(1000px);
+        -webkit-transform: translateX(1000px);
+        -moz-transform: translateX(1000px);
+    }
+}
 
 @keyframes exibirMenu{
     0%{
