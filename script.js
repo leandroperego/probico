@@ -25,14 +25,14 @@ function fecharMenu(){
     document.body.style.overflow = "scroll";
 }
 
-// --------------------abrir lacuna associados
+// --------------------abrir lacuna associados mobile
 const liAssociados = document.querySelector("#associados");
 const divSubMenu = document.querySelector("#associados-subMenu");
 const placeIcon = document.querySelector("#icon-place");
 
-liAssociados.addEventListener("click", exibirSubMenu);
+liAssociados.addEventListener("click", exibirSubMenuMobile);
 
-function exibirSubMenu(){
+function exibirSubMenuMobile(){
     let displayDiv = divSubMenu.style.display;
 
     if(displayDiv == "none"){
@@ -46,50 +46,53 @@ function exibirSubMenu(){
     }
 }
 
-let divSubMenuDesktop = document.querySelector("#submenu-desktop");
-function exibirSubMenuDesktop(event){
-    let elementoEvento = event.currentTarget;
+// --------------------abrir lacuna associados desktop
+let liAssociadosDesktop = document.querySelector("#associados-desktop");
+let divSubMenuDesktop = document.querySelector("#area-submenus-desktop");
+
+liAssociadosDesktop.addEventListener(`click`, () => {
     
-    let posicaoDoElemento = elementoEvento.getBoundingClientRect();
+    if (divSubMenuDesktop.classList.contains("display_none")){
+        exibirSubMenuDesktop(liAssociadosDesktop);
+    } else{
+        retirarSubMenuDesktop();
+    }
+});
+
+function exibirSubMenuDesktop(elementoClicado){
+    
+    let posicaoDoElemento = elementoClicado.getBoundingClientRect();
 
     let posicaoX = posicaoDoElemento.x;
     let posicaoY = posicaoDoElemento.y;
     let tamanhoElemento = posicaoDoElemento.width;
 
-    divSubMenuDesktop.style.left = posicaoX - tamanhoElemento/2 + "px";
-    appendChildSubMenuDesktop(elementoEvento);
+    divSubMenuDesktop.style.left = posicaoX - (tamanhoElemento / 2) + "px";
+    // divSubMenuDesktop.style.display = "block";
+    divSubMenuDesktop.classList.toggle("display_none");
+    let submenu = document.querySelector(".ul-subMenu").cloneNode(true);
+    divSubMenuDesktop.appendChild(submenu);
+    alterarIconSeta("icon-associados-desktop", false);
 }
 
-// function appendChildSubMenuDesktop(elemento){
-//     let elementoClicado = elemento.children[0].textContent; //ASSOCIADOS
-//     let subMenu;
-//     divSubMenuDesktop.style.display = "flex";
+function retirarSubMenuDesktop(){
+    divSubMenuDesktop.classList.add("display_none");
+    divSubMenuDesktop.children[0].remove();
+    alterarIconSeta("icon-associados-desktop", true);
+}
 
-//     switch (elementoClicado){
-//         case "ASSOCIADOS":
-//             subMenu = document.createElement("ul");
+function alterarIconSeta(id, boolean){
+    let icon = document.querySelector(`#${id}`);
 
-//             let li1 = document.createElement("li");
-//             let li2 = document.createElement("li");
-//             let li3= document.createElement("li");
-//             let tagA1 = document.createElement("a");
-//             let tagA2 = document.createElement("a");
-//             let tagA3 = document.createElement("a");
+    if (boolean){
+        icon.className = "fa fa-angle-down";
+    } else{
+        icon.className = "fa fa-angle-up";
+    }
+}
 
-//             li1.innerText = "Presidente";
-//             tagA1.appendChild(li1);
-//             subMenu.appendChild(tagA1);
-//             li2.innerText = "Diretoria";
-//             tagA2.appendChild(li2);
-//             subMenu.appendChild(tagA2);
-//             li3.innerText = "Associados";
-//             tagA3.appendChild(li3);
-//             subMenu.appendChild(tagA3);
-
-//             divSubMenuDesktop.appendChild(subMenu);
-//             break;
-//     }
-// }
+// ===============================================================================
+// CODIGO PARA CARROSSEL
 
 function carousel(containerName){
 

@@ -463,14 +463,14 @@ h3{
     animation: exibirMenu 1000ms;
 }
 
-#box-menu{
+.box-menu{
     width: 70%;
     height: 100%;
     background-color: var(--color60);
     color: var(--color30);
 }
 
-#box-menu header{
+.box-menu header{
     height: 10rem;
     border-bottom: 3px solid var(--color60);
     display: flex;
@@ -485,16 +485,16 @@ h3{
     cursor: pointer;
 }
 
-#box-menu footer{
+.box-menu footer{
     background-color: var(--color60);
 }
 
-#box-menu header i{
+.box-menu header i{
     font-size: 3rem;
 }
 
 
-#box-menu main ul,
+.box-menu main ul,
 .teste{
     list-style-type: none;
     display: flex;
@@ -504,16 +504,16 @@ h3{
     padding: 2rem 0;
 }
 
-#box-menu a{
+.box-menu a{
     color: var(--color30);
 }
 
-#box-menu a li{
+.box-menu a li{
     display: flex;
     gap: 1rem;
 }
 
-#box-menu main ul a,
+.box-menu main ul a,
 #associados{
     width: 70%;
     border-bottom: 1px solid;
@@ -529,14 +529,22 @@ h3{
     font-size: 1.3rem;
 }
 
-/* #area-submenus-desktop{
+#area-submenus-desktop{
     background-color: #f5f5f5;
     position: absolute;
-    display: inline;
+    /* display: none; */
     color: #003250;
     border-radius: 20px;
-    padding: 4rem;
-} */
+    padding: 3rem 5rem;
+}
+
+.display_none{
+    display: none;
+}
+
+.display_block{
+    display: block;
+}
 
 @-webkit-keyframes exibirMenu{
     0%{
@@ -745,6 +753,22 @@ h3{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+    }
+
+    .box-menu{
+        width: auto;
+        height: auto;
+        background-color: var(--color60);
+        color: var(--color30);
+    }
+
+    .ul-subMenu li{
+        padding-bottom: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .ul-subMenu a:hover{
+        text-decoration: underline;
     }
 }
 
