@@ -459,6 +459,8 @@ h3{
     display: flex;
     flex-direction: row-reverse;
     background-color: rgba(0, 50, 82, 0.5);
+    animation: exibirMenu 1000ms;
+    -webkit-animation: exibirMenu 1000ms;
 }
 
 #box-menu{

@@ -17,7 +17,7 @@ function exibirMenu(){
     menu.style.display = "flex";
     menu.style.overflow = "scroll";
     document.body.style.overflow = "hidden";
-    menu.style.animation = "exibirMenu 1000ms forwards";
+    // menu.style.animation = "exibirMenu 1000ms";
 }
 
 function fecharMenu(){
